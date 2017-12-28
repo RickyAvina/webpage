@@ -1,0 +1,190 @@
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 400vh;
+  background-color: black;
+}
+
+#title {
+  background-color: black;
+  padding: inherit;
+  margin: inherit;
+  width: 100%;
+  height: 100vh;
+  /*position: relative;*/
+}
+
+.content {
+  width:100%;
+  height: 100vh;
+}
+
+#projects {
+  background-color: lightgreen;
+}
+
+#projects #projectsWrapper {
+    background-color: blue;
+    width: 95%;
+    height: 90%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pjs {
+  position: relative;
+  background-color: black;
+  width: 46%;
+  height: 44%;
+  margin-top: 2.25%;
+  margin-left: 2.5%;
+  float: left;
+  overflow: hidden;
+}
+
+.pjs img {
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  left: 50%;
+  top: 50%;
+  opacity: 0.4;
+}
+
+#learn {
+  width: 60%;
+  height: 30%;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 25px;
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  opacity: 0;
+}
+
+#learn a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  margin-left: 30%;
+  line-height: 5;
+}
+
+#nvidia h1{
+  color: grey;
+  text-align: center;
+}
+
+#interests {
+  background-color: lightyellow;
+}
+
+#navlist {
+  width: 30%;
+  background-color: clear;
+  height: 10%;
+  top: 5%;
+  right: 5%;
+  position: absolute;
+  z-index: 1;
+}
+
+#greeting {
+  width: 80%;
+  height: 25%;
+  background-color: clear;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  z-index: 1;
+}
+
+#greeting p{
+  color: white;
+  font-family: baskerville;
+  font-weight: 500;
+  font-size: 60px;
+  letter-spacing: 0.2em;
+}
+
+#greeting span {
+  color: lightgrey;
+}
+
+.navitem {
+  height: 100%;
+  width: 30%;
+  background-color: clear;
+  text-decoration: none;
+  line-height: 400%;
+  display: inline;
+  float: left;
+  margin-left: 2.6%;
+  color: white;
+  font-family: proxima-nova;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+#mainvideo {
+  object-fit: cover;
+  height: 86vh;
+  width: 100%;
+  -webkit-filter: opacity(0.2);
+  position: relative;
+  z-index: 0;
+}
+
+#personal {
+  background-color: #F6F7FB;
+  height: 100vh;
+  position: relative;
+}
+
+#personal img {
+  /* 355 × 588 */
+  max-width: 355;
+  max-height: 588;
+  position: absolute;
+  bottom: 0px;
+  float: left;
+}
+
+#personal h1 {
+  color: white;
+  font-size: 70px;
+  position: absolute;
+  top: 0;
+  left: 45%;
+  font-family: proxima-nova;
+  font-weight: 100;
+}
+
+#header1 {
+  width: 60%;
+  height: 10%;
+  margin-left: 5%;
+  margin-top: 80%;
+  background-color: white;
+  border-style: solid;
+  border-color: maroon;
+  border-width: 86px;
+}
+
+#personal p {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 0.09 em;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  font-family: proxima-nova;
+  font-weight: 50;
+}

@@ -1,8 +1,9 @@
 var greetings = ["Developer", "Soccer Player", "Dreamer", "Programmer", "Creator", "Designer"];
+var counter = 0;
 
 $(document).ready(function() {
   scrollRotate();
-  changeGreeting();
+  setInterval(changeGreeting, 2000);
   navClick();
   showDetails();
 });
@@ -86,8 +87,6 @@ function navClick(){
 }
 
 function changeGreeting(){
-  var counter = 0;
-  setInterval(changeGreeting, 2000);
   var greeting = $("#greeting > p > span");
 
   greeting.fadeOut(1000, function(){

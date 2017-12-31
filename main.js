@@ -4,8 +4,33 @@ $(document).ready(function() {
   scrollRotate();
   changeGreeting();
   navClick();
-  showDetailNvidia();
+  showDetails();
 });
+
+function showDetails(){
+  showDetailNvidia();
+  showDetailFb();
+  showDetailRb();
+}
+
+function showDetailRb(){
+  var image = $('#robotics img');
+  $('#robotics').hover(function(){
+    image.animate({
+      opacity: "0.8"
+    }, 300);
+    $('#learnrb').animate({
+      opacity: 0.6
+    });
+  }, function(){
+    image.animate({
+      opacity: "0.4"
+    }, 300);
+    $('#learnrb').animate({
+      opacity: 0
+    }, 200);
+  });
+}
 
 function showDetailNvidia(){
   var image = $('#nvidia img');
@@ -13,17 +38,33 @@ function showDetailNvidia(){
     image.animate({
       opacity: "0.8"
     }, 300);
-
     $('#learn').animate({
       opacity: 0.6
     });
-
-
   }, function(){
     image.animate({
       opacity: "0.4"
     }, 300);
     $('#learn').animate({
+      opacity: 0
+    }, 200);
+  });
+}
+
+function showDetailFb(){
+  var image = $('#facebook img');
+  $('#facebook').hover(function(){
+    image.animate({
+      opacity: "0.8"
+    }, 300);
+    $('#learnfb').animate({
+      opacity: 0.6
+    });
+  }, function(){
+    image.animate({
+      opacity: "0.4"
+    }, 300);
+    $('#learnfb').animate({
       opacity: 0
     }, 200);
   });

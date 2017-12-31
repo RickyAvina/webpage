@@ -21,11 +21,11 @@ body {
 }
 
 #projects {
-  background-color: lightgreen;
+  background-color: black;
 }
 
 #projects #projectsWrapper {
-    background-color: blue;
+    background-color: black;
     width: 95%;
     height: 90%;
     position: relative;
@@ -55,7 +55,7 @@ body {
   opacity: 0.4;
 }
 
-#learn {
+.learnblocks{
   width: 60%;
   height: 30%;
   background-color: black;
@@ -67,12 +67,26 @@ body {
   opacity: 0;
 }
 
-#learn a{
+/*#learn {
+  width: 60%;
+  height: 30%;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 25px;
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  opacity: 0;
+}*/
+
+.learnblocks a{
   text-decoration: none;
   font-size: 20px;
   color: white;
-  margin-left: 30%;
-  line-height: 5;
+  padding-left: 10%;
+  line-height: 4.5;
+  width: 100%;
+  height: 100%;
 }
 
 #nvidia h1{
@@ -179,12 +193,14 @@ body {
 }
 
 #personal p {
-  color: white;
-  font-size: 40px;
+  color: black;
+  font-size: 32px;
   letter-spacing: 0.09 em;
   position: absolute;
-  top: 20%;
-  left: 5%;
+  text-align: right;
   font-family: proxima-nova;
   font-weight: 50;
+  top: 8%;
+  right: 5%;
+  line-height: 200%;
 }

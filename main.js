@@ -1,11 +1,13 @@
 var greetings = ["Developer", "Soccer Player", "Dreamer", "Programmer", "Creator", "Designer"];
 var counter = 0;
+var slideIndex = 0;
 
 $(document).ready(function() {
   scrollRotate();
   setInterval(changeGreeting, 2000);
   navClick();
   showDetails();
+  carousel();
 });
 
 function showDetails(){
@@ -99,6 +101,20 @@ function changeGreeting(){
   if (counter >= greetings.length){
     counter = 0;
   }
+}
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slideshow");
+    console.log(x);
+
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 4000); // Change image every 2 seconds
 }
 
 function scrollRotate(){
